@@ -1,18 +1,4 @@
-
-  
 function fval(val){
-    document.getElementById("answer").innerHTML+=val;
-}
-function fadd(val){
-    document.getElementById("answer").innerHTML+=val;
-}
-function fsub(val){
-    document.getElementById("answer").innerHTML+=val;
-}
-function fmult(val){
-    document.getElementById("answer").innerHTML+=val;
-}
-function fdiv(val){
     document.getElementById("answer").innerHTML+=val;
 }
 function cancel(){
