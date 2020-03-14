@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="calc.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Scientific Calculator</title>
+      </head>
+    
+<body>
+    <div class="container-fluid">
+        <div class="main">
+            <div class="screen">
+                <p id="answer" style="text-align: center; font-size: 30px;"></p>
+            </div>
+            <div class="controls">
+                <div class="adv">
+                    <div class="left"><button type="button" class="btn" onclick="clea()">clear</button></div>
+                </div>
+
+                <div class="cont">
+                    <div class="row one">
+                        <div class="col-md-3"><button class="btn" value="1" onclick="fval(this.value)">1</button></div>
+                        <div class="col-md-3"><button class="btn" value="2" onclick="fval(this.value)">2</button></div>
+                        <div class="col-md-3"><button class="btn" value="3" onclick="fval(this.value)">3</button></div>
+                        <div class="col-md-3"><button class="btn" value="4" onclick="fval(this.value)">4</button></div>
+                    </div>
+                    <div class="row one">
+                        <div class="col-md-3"><button class="btn" value="5" onclick="fval(this.value)">5</button></div>
+                        <div class="col-md-3"><button class="btn" value="6" onclick="fval(this.value)">6</button></div>
+                        <div class="col-md-3"><button class="btn" value="7" onclick="fval(this.value)">7</button></div>
+                        <div class="col-md-3"><button class="btn" value="8" onclick="fval(this.value)">8</button></div>
+                    </div>
+                    <div class="row one">
+                        <div class="col-md-3"><button class="btn" value="9" onclick="fval(this.value)">9</button></div>
+                        <div class="col-md-3"><button class="btn" value="0" onclick="fval(this.value)">0</button></div>
+                        <div class="col-md-3"><button class="btn" value="." onclick="fval(this.value)">.</button></div>
+                        <div class="col-md-3"><button class="btn" value="%" onclick="fval(this.value)">%</button></div>
+                    </div>
+                    <div class="row one">
+                        <div class="col-md-3"><button class="btn" value="+" onclick="fadd(this.value)">+</button></div>
+                        <div class="col-md-3"><button class="btn" value="-" onclick="fsub(this.value)">-</button></div>
+                        <div class="col-md-3"><button class="btn" value="*" onclick="fmult(this.value)">*</button></div>
+                        <div class="col-md-3"><button class="btn" value="/" onclick="fdiv(this.value)">/</button></div>
+                    </div>
+                    <div class="row one">
+                        <div class="col-md-4"><button class="btn" style="width: 150px;" onclick="cancel()">CE</button></div>
+                        <div class="col-md-8"><button class="btn"style="width: 305px;" onclick="calc()">ANSWER</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="calc.js">
+        </body>
+        </html>
