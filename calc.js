@@ -1,10 +1,4 @@
-// let ans = 5;
 
-// document.forms["calculation"]["answer"].value = ans;
-
-
-// {/* <input type="text" name="name" id="uniqueID" value="value" /> */}
-var isadd = 0, issub=0, ismult = 0, isdiv = 0;
   
 function fval(val){
     document.getElementById("answer").innerHTML+=val;
@@ -38,25 +32,30 @@ function clea(){
 
 function calc(){
     let ans;
-    let op;
+    let op = 0;
     let a = "";
     let b = "";
     let p = document.getElementById("answer").innerHTML;
 
     let x = p.split("");
     for (let i=0; i<x.length; i++){
-        if (x[i] == "+" || x[i] == "-" || x[i] == "*" || x[i] == "/"){
+        if (x[i] == "+" || x[i] == "-" || x[i] == "*" || x[i] == "/" || x[i] == "R"){
             op = i-1;
         }
     }
+
+    if (op != 0 || op != 1){
     for (let j=0; j<=op; j++){
         a += x[j];
     } 
+}
     for (let k=(op+2); k<x.length; k++){
         b += x[k];
     }
-    a = parseInt(a);
-    b = parseInt(b);
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
     if (x[op+1] == "+"){
         ans = a+b;
     }
@@ -71,6 +70,9 @@ function calc(){
     }
     else if (x[op+1] == "%"){
         ans = a%b;
+    }
+    else if(x[op+1] == "R"){
+        ans = b**(0.5);
     }
 
     document.getElementById("answer").innerHTML = ans;
