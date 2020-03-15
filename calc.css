@@ -6,8 +6,9 @@ body{
 }
 div.main{
     width: 500px;
-    height: 500px;
+    height: 450px;
     position: relative;
+    top: 45px;
     background: dodgerblue;
     margin-left: auto;
     margin-right: auto;
@@ -60,7 +61,7 @@ div.cont{
     width: 480px;
 } */
 button{
-    width: 100px;
+    width: 95px;
 }
 div.one{
     margin-top: 10px;
